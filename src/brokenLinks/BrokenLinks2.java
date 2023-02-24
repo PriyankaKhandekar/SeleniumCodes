@@ -1,5 +1,6 @@
 package brokenLinks;
 
+import java.time.Duration;
 import java.util.List;
 import java.util.concurrent.TimeUnit;
 
@@ -18,12 +19,12 @@ public class BrokenLinks2 {
 	        WebDriver driver = new ChromeDriver();					
 	        		
 	        String underConsTitle = "Under Construction: Mercury Tours";					
-				driver.manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS);					
+				driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(30));					
 
 				driver.get(baseUrl);					
 	        List<WebElement> linkElements = driver.findElements(By.tagName("a"));							
 	        String[] linkTexts = new String[linkElements.size()];							
-				int					i = 0;					
+				int	i = 0;					
 
 				//extract the link texts of each link element		
 				for (WebElement e : linkElements) {							

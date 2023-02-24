@@ -45,6 +45,7 @@ public class BrokenLinks {
         	try {
                 huc = (HttpURLConnection)(new URL(url).openConnection());
                 
+                
                 huc.setRequestMethod("HEAD");
                 
                 huc.connect();
