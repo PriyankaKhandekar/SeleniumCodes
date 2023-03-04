@@ -50,6 +50,8 @@ public class DynamicTable {
 		WebElement coloum3 = driver.findElement(By.xpath("//div[@id='leftcontainer']//table//thead//tr//th[3]"));
 		System.out.println(coloum3.getText());
 
+		
+		
 	}
 
 }
